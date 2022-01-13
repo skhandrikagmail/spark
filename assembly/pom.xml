@@ -34,6 +34,8 @@
     <sbt.project.name>assembly</sbt.project.name>
     <build.testJarPhase>none</build.testJarPhase>
     <build.copyDependenciesPhase>package</build.copyDependenciesPhase>
+    <assembly.guava.version>29.0-jre</assembly.guava.version>
+    <fasterxml.jackson-module-scala.assembly.version>2.10.5</fasterxml.jackson-module-scala.assembly.version>
   </properties>
 
   <dependencies>
@@ -83,8 +85,14 @@
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
-      <scope>${hadoop.deps.scope}</scope>
+      <version>${assembly.guava.version}</version>
     </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.module</groupId>
+      <artifactId>jackson-module-scala_2.11</artifactId>
+      <version>${fasterxml.jackson-module-scala.assembly.version}</version>
+    </dependency>
+
   </dependencies>
 
   <build>
