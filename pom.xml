@@ -232,6 +232,7 @@
     <CodeCacheSize>1g</CodeCacheSize>
     <!-- Needed for consistent times -->
     <maven.build.timestamp.format>yyyy-MM-dd HH:mm:ss z</maven.build.timestamp.format>
+    <netty.version>4.1.61.Final</netty.version>
   </properties>
   <repositories>
     <repository>
@@ -646,13 +647,19 @@
       <dependency>
         <groupId>io.netty</groupId>
         <artifactId>netty-all</artifactId>
-        <version>4.1.47.Final</version>
+        <version>${netty.version}</version>
+	<exclusions>
+	  <exclusion>
+            <groupId>*</groupId>
+            <artifactId>*</artifactId>
+          </exclusion>
+	</exclusions>
       </dependency>
-      <dependency>
+      <!--dependency>
         <groupId>io.netty</groupId>
         <artifactId>netty</artifactId>
         <version>3.9.9.Final</version>
-      </dependency>
+      </dependency -->
       <dependency>
         <groupId>org.apache.derby</groupId>
         <artifactId>derby</artifactId>
