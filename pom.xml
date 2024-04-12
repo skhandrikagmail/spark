@@ -185,7 +185,7 @@
     <codehaus.jackson.version>1.9.13</codehaus.jackson.version>
     <fasterxml.jackson.version>2.14.2</fasterxml.jackson.version>
     <fasterxml.jackson.databind.version>2.14.2</fasterxml.jackson.databind.version>
-    <snappy.version>1.1.10.3</snappy.version>
+    <snappy.version>1.1.10.5</snappy.version>
     <netlib.ludovic.dev.version>3.0.3</netlib.ludovic.dev.version>
     <commons-codec.version>1.15</commons-codec.version>
     <commons-compress.version>1.22</commons-compress.version>
@@ -213,7 +213,7 @@
     <maven-antrun.version>1.8</maven-antrun.version>
     <commons-crypto.version>1.1.0</commons-crypto.version>
     <commons-cli.version>1.5.0</commons-cli.version>
-    <bouncycastle.version>1.60</bouncycastle.version>
+    <bouncycastle.version>1.77</bouncycastle.version>
     <tink.version>1.7.0</tink.version>
     <netty.version>4.1.87.Final</netty.version>
     <!--
@@ -1245,7 +1245,7 @@
       <dependency>
         <groupId>org.postgresql</groupId>
         <artifactId>postgresql</artifactId>
-        <version>42.5.1</version>
+        <version>42.7.2</version>
         <scope>test</scope>
       </dependency>
       <dependency>
@@ -1446,13 +1446,13 @@
       </dependency>
       <dependency>
         <groupId>org.bouncycastle</groupId>
-        <artifactId>bcprov-jdk15on</artifactId>
+        <artifactId>bcprov-jdk18on</artifactId>
         <version>${bouncycastle.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.bouncycastle</groupId>
-        <artifactId>bcpkix-jdk15on</artifactId>
+        <artifactId>bcpkix-jdk18on</artifactId>
         <version>${bouncycastle.version}</version>
         <scope>test</scope>
       </dependency>
